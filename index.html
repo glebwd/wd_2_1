@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сравнение автомобилей: Lamborghini, Voyah, Jaguar</title>
+  <style>
+    :root {
+      --bg: #24242c;
+      --surface: #2b2b35;
+      --head: #1e1e24;
+      --text: #f1f1f3;
+      --muted: #9b9ba6;
+      --border: #34343d;
+      --gold: #e3b341;
+      --lambo: #e3b341;
+      --voyah: #3fb8a6;
+      --jaguar: #d9534f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family:  "Segoe UI";
+      font-size: 18px;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 72px 28px 96px;
+    }
+    .table-wrap {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow-x: auto;
+      background: var(--surface);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+    table {
+      width: 100%;
+      min-width: 860px;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+    caption {
+      text-align: left;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      padding: 28px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 20px 24px;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    th:last-child, td:last-child { border-right: none; }
+    thead th {
+      background: var(--head);
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-top: 4px solid var(--border);
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+    thead th:nth-child(2) { border-top-color: var(--lambo); }
+    thead th:nth-child(3) { border-top-color: var(--voyah); }
+    thead th:nth-child(4) { border-top-color: var(--jaguar); }
+    thead th:first-child { color: var(--muted); font-weight: 600; }
+    tbody th {
+      background: var(--head);
+      font-weight: 600;
+      color: var(--muted);
+      width: 22%;
+    }
+    tfoot td {
+      background: var(--head);
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-bottom: none;
+    }
+    mark {
+      background: rgba(227, 179, 65, 0.16);
+      color: var(--gold);
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(227, 179, 65, 0.45);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="table-wrap">
+      <table>
+        <caption>Сравнение автомобилей: Lamborghini, Voyah и Jaguar</caption>
+        <thead>
+          <tr>
+            <th scope="col">Характеристика</th>
+            <th scope="col">Lamborghini</th>
+            <th scope="col">Voyah</th>
+            <th scope="col">Jaguar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Самая дорогая модель</th>
+            <td>  
+                <mark>Revuelto</mark>, от ≈ 608 000 $
+            </td>
+            <td>
+              Passion, от ≈ 50 000 $
+            </td>
+            <td>
+                F-Type R, от ≈ 110 000 $
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Самая дешёвая модель</th>
+            <td>
+                Urus S, от ≈ 240 000 $
+            </td>
+            <td>
+              <mark>Free</mark>, от ≈ 37 000 $
+            </td>
+            <td>
+                E-Pace, от ≈ 40 000 $
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Двигатель</th>
+            <td>V12 + 3 электромотора (гибрид), 1015 л. с.</td>
+            <td>Электромоторы, 408–510 л. с.</td>
+            <td>V8 5.0 с наддувом, 575 л. с.</td>
+          </tr>
+          <tr>
+            <th scope="row">Расход топлива</th>
+            <td>≈ 11,5 л/100 км</td>
+            <td><mark>Электро: ≈ 20 кВт·ч/100 км</mark></td>
+            <td>≈ 11,7 л/100 км</td>
+          </tr>
+          <tr>
+            <th scope="row">Скорость (разгон 0–100 км/ч)</th>
+            <td><mark>2,5 с</mark></td>
+            <td>≈ 4,3 с</td>
+                        <td>3,5 с</td>
+          </tr>
+          <tr>
+            <th scope="row">Экологические сертификаты</th>
+            <td>Есть: углеродно-нейтральное производство, ISO 14001</td>
+            <td>Статус NEV (Китай), нулевые локальные выбросы</td>
+            <td>Есть: ISO 14001 (Jaguar Land Rover)</td>
+          </tr>
+          <tr>
+            <th scope="row">Гарантийный срок</th>
+            <td>3 года без ограничения пробега</td>
+            <td><mark>5 лет / 150 000 км</mark></td>
+            <td>3 года</td>
+          </tr>
+          <tr>
+            <th scope="row">Максимальная скорость</th>
+            <td><mark>350 км/ч</mark></td>
+            <td>≈ 200 км/ч</td>
+            <td>300 км/ч</td>
+          </tr>
+          <tr>
+            <th scope="row">Тип коробки передач</th>
+            <td>Автоматическая (робот, 2 сцепления)</td>
+            <td>Автоматическая (редуктор)</td>
+            <td>Автоматическая</td>
+          </tr>
+          <tr>
+            <th scope="row">Количество передач</th>
+            <td>8</td>
+            <td><mark>1</mark></td>
+            <td>8</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Цены и характеристики приблизительные и зависят от рынка и комплектации.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
